@@ -13,3 +13,4 @@ export class SellerPageComponent implements OnInit {
   }
 
 }
+ 

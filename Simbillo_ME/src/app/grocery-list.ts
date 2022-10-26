@@ -46,4 +46,4 @@ export const GROCERY: Grocery[] = [
 		retail_price: 87.00,
 		manufacturing_company: 'The Hershey Company',
 	},
-]
+] 

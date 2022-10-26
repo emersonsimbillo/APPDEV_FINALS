@@ -12,4 +12,4 @@ export class NavigationComponent implements OnInit {
   ngOnInit(): void {
   }
 
-}
+} 

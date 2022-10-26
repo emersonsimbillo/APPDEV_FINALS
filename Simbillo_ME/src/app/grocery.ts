@@ -6,4 +6,4 @@ export interface Grocery {
 	unit_price: number;
 	retail_price: number;
 	manufacturing_company: string;
-}
+} 

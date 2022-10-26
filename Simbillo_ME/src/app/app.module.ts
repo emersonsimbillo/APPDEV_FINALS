@@ -23,4 +23,4 @@ import { SellerPageComponent } from './seller-page/seller-page.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { } 
