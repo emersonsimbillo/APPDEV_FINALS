@@ -19,7 +19,7 @@ export const GROCERY: Grocery[] = [
 		retail_price: 439.00,
 		manufacturing_company: 'Mondelēz International, Inc.',
 	},
-	{
+	{ 
 		id: 3,
 		type: 'Chocolate',
 		name: 'Ferrero Rocher',

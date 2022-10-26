@@ -6,7 +6,7 @@
  * Licensed under MIT
  * Based on Bootstrap
 */
-/*!
+/*! 
  * Bootstrap  v5.2.2 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
  * Copyright 2011-2022 Twitter, Inc.
@@ -1902,7 +1902,7 @@ progress {
   --bs-table-striped-color: #000;
   --bs-table-active-bg: #dfbfc0;
   --bs-table-active-color: #fff;
-  --bs-table-hover-bg: #e5c4c5;
+  --bs-table-hover-bg: #e5c4c5; 
   --bs-table-hover-color: #000;
   color: var(--bs-table-color);
   border-color: var(--bs-table-border-color);

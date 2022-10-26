@@ -21,4 +21,4 @@ describe('SellerPageComponent', () => {
     expect(component).toBeTruthy();
   });
 });
- 
+  
