@@ -7,6 +7,9 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { ProductsListComponent } from './product-list/product-list.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { SellerPageComponent } from './seller-page/seller-page.component';
+import { AccountsListComponent } from './accounts-list/accounts-list.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { SellerPageComponent } from './seller-page/seller-page.component';
     NavigationComponent,
     ProductsListComponent,
     ProductDetailsComponent,
-    SellerPageComponent
+    SellerPageComponent,
+    AccountsListComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
