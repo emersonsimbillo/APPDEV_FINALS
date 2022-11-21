@@ -1,41 +1,41 @@
-<!-- NAVBAR -->
-
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 	<div class="container-fluid">
-		<img src="../../assets/logo.jpg" height="85px" width="80px">
-	  <a class="navbar-brand" routerLink="products_lists" >-SIMBILLO</a>
-	  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	  </button>
-
-	  <div class="collapse navbar-collapse" id="navbarColor02">
-		<ul class="navbar-nav me-auto">
-
-			<!-- ACCOUNTS -->
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Accounts</a>
-				<div class="dropdown-menu">
-				  <a class="dropdown-item" routerLink="login">Login</a>
-				  <a class="dropdown-item" routerLink="register">Register</a>
-				  <a class="dropdown-item" routerLink="account-list">Accounts List</a>
-				</div>
-			  </li>
-<!--  -->
-			<!-- ProductList -->
+	<a class="navbar-brand" href="#"><img src="../../assets/images/e logo.jpg" width="100" height="auto"></a>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 		  <li class="nav-item">
-			<a class="nav-link active" aria-current="page" routerLink="products_lists"></a>
+			<a class="nav-link active" aria-current="page" routerLink="home_page">SIMBILLO</a>
 		  </li>
-		  	<!-- ProductDetails -->
+		  <li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" routerLink="accounts" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+			  Accounts
+			</a>
+			<ul class="dropdown-menu">
+			  <li><a class="dropdown-item" routerLink="login">Login</a></li>
+			  <li><a class="dropdown-item" routerLink="register">Register</a></li>
+			</ul>
+		  </li>
+		  <!--
 		  <li class="nav-item">
-			<a class="nav-link active" aria-current="page" routerLink="product_details"></a>
+			<a class="nav-link" aria-current="page" routerLink="products_lists">Products List</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" aria-current="page" routerLink="product_details">Product Details</a>
+		  </li>
+		  -->
+		  <li class="nav-item">
+			<a class="nav-link" aria-current="page" routerLink="grocery">Product List</a>
 		  </li>
 		</ul>
 
+		
 		<!-- SEARCH FORM -->
 
 		<form class="d-flex">
 			<input class="form-control me-sm-2" type="text" placeholder="Search">
 			<button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
 		  </form>
-		
-		
+		  
+	  </div>
+	</div>
+</nav>

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Simbillo_ME": {
+    "Charog_ME": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/simbillo-me",
+            "outputPath": "dist/charog-me",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "Simbillo_ME:build:production"
+              "browserTarget": "Charog_ME:build:production"
             },
             "development": {
-              "browserTarget": "Simbillo_ME:build:development"
+              "browserTarget": "Charog_ME:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Simbillo_ME:build"
+            "browserTarget": "Charog_ME:build"
           }
         },
         "test": {
@@ -99,6 +99,6 @@
     }
   },
   "cli": {
-    "analytics": "43f671d5-a32c-4733-a813-88e9278e9b88"
+    "analytics": false
   }
-} 
+}

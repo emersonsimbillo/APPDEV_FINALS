@@ -1,12 +1,12 @@
 import { Component, Input, OnInit } from '@angular/core';
 
-import { Grocery } from '../grocery';
-import { GROCERY } from '../grocery-list';
+import { Grocery } from '../grocery/grocery';
+import { GROCERY } from '../grocery/grocery-lists';
 
 @Component({
   selector: 'app-products-list',
-  templateUrl: './product-list.component.html',
-  styleUrls: ['./product-list.component.css']
+  templateUrl: './products-list.component.html',
+  styleUrls: ['./products-list.component.css']
 })
 export class ProductsListComponent implements OnInit {
 
@@ -23,4 +23,4 @@ export class ProductsListComponent implements OnInit {
   ngOnInit(): void {
   }
 
-}  
+}

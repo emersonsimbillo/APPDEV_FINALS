@@ -1,27 +1,24 @@
-import { Injectable } from '@angular/core'
-import { PreloadingStrategy, Route } from '@angular/router'
-import { Observable, of } from 'rxjs';
+import { Injectable } from "@angular/core";
+import { PreloadingStrategy, Route } from "@angular/router";
+import { Observable, of } from "rxjs";
 
 @Injectable({
-
-    providedIn: 'root',
-
+	providedIn: 'root',
 })
+export class SelectivePreLoadingStategyService implements PreloadingStrategy {
+	preloadedModules: string[] =[];
 
-export class SelectivePreloadingStrategyService implements PreloadingStrategy {
+	preload(route: Route, load: () => Observable<any>): Observable<any> {
+		if (route.data?.['preload'] && route.path != null) {
+			
+			this.preloadedModules.push(route.path);
 
-    preloadedModules: string[] = [];
+			
+			console.log('Preloaded: ' + route.path);
 
-    preload(route: Route, load: () => Observable<any>): Observable<any> {
-        if (route.data?.['preload'] && route.path != null){
-
-            this.preloadedModules.push(route.path);
-
-            console.log('Preloaded: ' + route.path);
-
-            return load();
-        }else{
-            return of(null);
-        }
-    }
+			return load();
+		} else {
+			return of(null);
+		}
+	}
 }

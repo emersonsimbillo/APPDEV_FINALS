@@ -1,28 +1,28 @@
-import { NgModule } from "@angular/core";
-import { RouterModule, Routes } from "@angular/router";
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 
-import { NavigationComponent } from './navigation/navigation.component';
-import { ProductsListComponent } from './Product/product-list/product-list.component';
-import { ProductDetailsComponent } from './Product/product-details/product-details.component';
-import { SellerPageComponent } from './seller-page/seller-page.component';
-import { RegisterComponent } from './register/register.component';
-import { LoginComponent } from './login/login.component';
-import { AccountsListComponent } from './accounts-list/accounts-list.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { NavigationComponent } from './navigation/navigation.component';
+import { ProductsListComponent } from './products-list/products-list.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
+import { AccountsComponent } from './accounts/accounts.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { GroceryComponent } from './grocery/grocery/grocery.component';
 
-import { SelectivePreloadingStrategyService } from "./selective-preloading-strategy.service";
+import {SelectivePreLoadingStategyService} from './selective-preloading-strategy.service';
 
 const appRoutes: Routes = [
-  {path: '', redirectTo: '/product-list', pathMatch: 'full'},
+  { path: '', redirectTo: '/grocery', pathMatch: 'full' },
 
+  {path: 'home_page', component: HomepageComponent},
   {path: 'navigation', component: NavigationComponent},
   {path: 'products_lists', component: ProductsListComponent},
   {path: 'product_details', component: ProductDetailsComponent},
-  {path: 'seller_page', component: SellerPageComponent},
-  {path: 'register', component: RegisterComponent},
+  {path: 'accounts', component: AccountsComponent},
   {path: 'login', component: LoginComponent},
-  {path: 'home_page', component: HomepageComponent},
-  {path: 'account-list', component: AccountsListComponent}
+  {path: 'register', component: RegisterComponent},
+  {path: 'grocery', component: GroceryComponent}
 ];
 
 @NgModule({
@@ -31,7 +31,7 @@ const appRoutes: Routes = [
       appRoutes,
       {
         enableTracing: false,
-        preloadingStrategy: SelectivePreloadingStrategyService,
+        preloadingStrategy: SelectivePreLoadingStategyService,
       }
     )
   ],
@@ -39,39 +39,20 @@ const appRoutes: Routes = [
 })
 export class AppRoutingModule { }
 
-
-
-
-
-
-
-/*import { Component, NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-
-import { NavigationComponent } from './navigation/navigation.component';
-import { ProductsListComponent } from './Product/product-list/product-list.component';
-import { ProductDetailsComponent } from './Product/product-details/product-details.component';
-import { SellerPageComponent } from './seller-page/seller-page.component';
-import { RegisterComponent } from './register/register.component';
-import { LoginComponent } from './login/login.component';
-import { AccountsListComponent } from './accounts-list/accounts-list.component';
-
-
-
+/*
 const routes: Routes = [
+  {path: 'home_page', component: HomepageComponent},
   {path: 'navigation', component: NavigationComponent},
   {path: 'products_lists', component: ProductsListComponent},
   {path: 'product_details', component: ProductDetailsComponent},
-  {path: 'seller_page', component: SellerPageComponent},
-  {path: 'register', component: RegisterComponent},
+  {path: 'accounts', component: AccountsComponent},
   {path: 'login', component: LoginComponent},
-  {path: 'account-list', component: AccountsListComponent}
-  
-
+  {path: 'register', component: RegisterComponent},
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }  */
+export class AppRoutingModule { }
+*/

@@ -1,0 +1,35 @@
+<div class="container">
+	<br>
+	<h2>PRODUCT LIST:</h2>
+	<div class="col-12">
+        <button class="btn btn-primary" type="submit">Add New</button>
+      </div>
+	  <br>
+	<table class="table table-bordered table-striped">
+		<thead>
+			<tr>
+
+			<th scope="col">ID</th>
+			<th scope="col">ITEM</th>
+			<th scope="col">NAME</th>
+			<th scope="col"></th>
+
+			</tr>
+		</thead>
+		<tbody>
+
+			<tr *ngFor="let grocery of groceries$ | async" [class.selected]="grocery.id === selectedId">
+				<th scope="row" class="cLabel">{{grocery.id}}</th>
+				<td>{{grocery.type}}</td>
+				<td>{{grocery.name}}</td>
+				<td>
+					<button type="button" class="btn btn-outline-info" [routerLink]="['/grocery', grocery.id]"><i class="bi bi-info-circle"></i>&nbsp; Info</button>
+					&nbsp;
+					<button type="button" class="btn btn-outline-danger actions"><i class="bi bi-trash"></i>&nbsp; Delete</button>
+				</td>
+			</tr>
+
+			</tbody>
+	</table>
+</div>  
+

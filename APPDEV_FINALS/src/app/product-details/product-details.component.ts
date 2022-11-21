@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 
-import { Grocery } from '../grocery';
+import { Grocery } from '../grocery/grocery';
 
 @Component({
   selector: 'app-product-details',
@@ -16,4 +16,4 @@ export class ProductDetailsComponent implements OnInit {
   ngOnInit(): void {
   }
 
-}  
+}
